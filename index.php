@@ -40,12 +40,54 @@
                         </div>
                     </div>
                     <div class="row recipe m-0" >
-                        <div class="col"></div>
-                        <div class="col"></div>
-                        <div class="col"></div>
+                        <div class="col" style="height:auto;">
+                            <div class="food-card">
+                                <img src="<?php the_field('home_background') ?>" alt="">
+                                <div class="card-text">
+                                    <h1>RECIPE NAME</h1>
+                                    <p>Mini description about the meal, recipe and the organon of the dish. I’m just trying to find words to fill place.</p>
+                                    <button>Click for more</button>
+                                </div>
+                            </div>
+                            <div class="food-card">
+                                <img src="<?php the_field('home_background') ?>" alt="">
+                                <div class="card-text">
+                                    <h1>RECIPE NAME</h1>
+                                    <p>Mini description about the meal, recipe and the organon of the dish. I’m just trying to find words to fill place.</p>
+                                    <button>Click for more</button>
+                                </div>
+                            </div>
+                            <div class="food-card">
+                                <img src="<?php the_field('home_background') ?>" alt="">
+                                <div class="card-text">
+                                    <h1>RECIPE NAME</h1>
+                                    <p>Mini description about the meal, recipe and the organon of the dish. I’m just trying to find words to fill place.</p>
+                                    <button>Click for more</button>
+                                </div>
+                            </div>
+                            <div class="food-card">
+                                <img src="<?php the_field('home_background') ?>" alt="">
+                                <div class="card-text">
+                                    <h1>RECIPE NAME</h1>
+                                    <p>Mini description about the meal, recipe and the organon of the dish. I’m just trying to find words to fill place.</p>
+                                    <button>Click for more</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="row" id="books">
-
+                    <div class="row book-container" id="books">
+                        <div class="col-3 arrows">
+                            <button> <i class="fas fa-arrow-left"></i> </button>
+                        </div>
+                        <div class="col-6 book">
+                            <h1>PURCHASE OUR BOOK</h1>
+                            <img src=" <?php the_field('home_background') ?>" alt="">
+                            <p>Mini description about the meal, recipe and the origin of the dish. I’m just trying to find words to fill place.I’m just trying to find words to fill place</p>
+                            <button>Click for more</button>
+                        </div>
+                        <div class="col-3 arrows">
+                            <button> <i class="fas fa-arrow-right"></i></button>
+                        </div>
                     </div>
                 <?php endwhile; ?>
             <?php endif; ?>
