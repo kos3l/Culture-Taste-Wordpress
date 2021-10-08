@@ -8,4 +8,57 @@ Version: 1
 
 body{
     background-color: #EDEDED;
+    font-family: "Raleway", sans-serif;
+}
+.bg-img{
+
+    width: 100vw;
+    height: 80vh;
+    z-index: -100;
+    filter: blur(3px);
+  -webkit-filter: blur(3px);
+
+}
+.main-body{
+    height: auto;
+    overflow: hidden;
+  
+    
+
+}
+.landing-page{
+    height: auto;
+    width: 100vw;
+    position:relative;
+    
+}
+.top-nav{
+    height: 20vh;
+    width: 100%;
+    background-color: #EDEDED;
+}
+.center{
+    z-index: 10;
+    position: absolute;
+    left: 30vw;
+    top: 17vh;
+    width: 40%;
+    text-align: center;
+
+}
+
+.pop-up-box h1{
+    color:  white;
+    font-weight: 900;
+    font-size: 4.9rem;
+    letter-spacing: 0.2rem;
+    text-shadow: 2px 2px 6px grey;
+}
+.text-box{
+    padding: 1rem;
+    border-radius: 10px;
+    border: 2px solid  white;
+    background-color:  white;
+    color: black;
+    font-weight: 300;
 }

@@ -8,11 +8,19 @@
     <?php wp_head(); ?>
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="row d-none d-lg-block">
-            <div class="col ">
+    <div class="container-fluid main-body p-0">
+        <div class="row top-nav ">
+
+            <div class="col p-0">
+                <?php
+                $args = array(
+                    'theme_location' => 'primary'
+                );
+                ?>
+                <?php wp_nav_menu( $args); ?>
                 
             </div>
         </div>
+
 
 
