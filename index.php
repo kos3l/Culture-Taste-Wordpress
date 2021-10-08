@@ -89,6 +89,27 @@
                             <button> <i class="fas fa-arrow-right"></i></button>
                         </div>
                     </div>
+                    <div class="row chefs">
+                        <h1>TEAM / CHEFS</h1>
+                        <div class="circle-container">
+                            <div class=" circle">
+                                <img src="<?php the_field('placeholder') ?>" alt="">
+                                <p>YOUR NAME</p>
+                            </div>
+                            <div class="circle">
+                                <img src="<?php the_field('placeholder') ?>" alt="">
+                                <p>YOUR NAME</p>
+                            </div>
+                            <div class="circle">
+                                <img src="<?php the_field('placeholder') ?>" alt="">
+                                <p>YOUR NAME</p>
+                            </div>
+                            <div class="circle">
+                                <img src="<?php the_field('placeholder') ?>" alt="">
+                                <p>YOUR NAME</p>
+                            </div>
+                        </div>
+                    </div>
                 <?php endwhile; ?>
             <?php endif; ?>
 <?php get_footer() ?>
