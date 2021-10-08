@@ -14,10 +14,30 @@
                             </div>
                     </div>
                     <div class="row filters-title m-0" id="recipes">
+                        <div class="col title-col justify-content-center align-items-center">
                         <h1>RECIPES</h1>
+                        </div>
+                        
                     </div>
                     <div class="row filters m-0" >
-                        <div class="col"></div>
+                        <div class="col" style="width:100vw; height:30vh;">
+                            <div class="filters-container">
+                                <div class="sort-title"><p>Sort by difficulty</p></div>
+                                <div class="button-filters">
+                                    <button>EASY</button>
+                                    <button>MEDIUM</button>
+                                    <button>HARD</button>
+                                </div>
+                            </div>
+                            <div class="filters-container">
+                                <div class="sort-title"><p>Sort by daytime</p></div>
+                                <div class="button-filters">
+                                    <button>BREAKFAST</button>
+                                    <button>LUNCH</button>
+                                    <button>DINNER</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="row recipe m-0" >
                         <div class="col"></div>
