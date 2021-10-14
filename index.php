@@ -15,8 +15,14 @@
                     </div>
                     <div class="row filters-title m-0" id="recipes">
                         <div class="col title-col justify-content-center align-items-center">
+
+                        <a href="http://localhost:8888/wp-new/?post_type=recipes&customize_changeset_uuid=600b1be5-f893-48d0-9784-1187f5a2661c"> <h1>ALL RECIPES</h1></a>
+                        </div>
                         
-                        <a href="http://localhost:8888/wp-new/?post_type=recipes&customize_changeset_uuid=600b1be5-f893-48d0-9784-1187f5a2661c"> <h1>RECIPES</h1></a>
+                    </div>
+                    <div class="row m-0">
+                        <div class="col title-col-middle justify-content-center align-items-center">
+                            <p>or choose a delicious dish with our filters</p>
                         </div>
                         
                     </div>
