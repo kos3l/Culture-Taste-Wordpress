@@ -15,63 +15,30 @@
                     </div>
                     <div class="row filters-title m-0" id="recipes">
                         <div class="col title-col justify-content-center align-items-center">
-                        <h1>RECIPES</h1>
+                        
+                        <a href="http://localhost:8888/wp-new/?post_type=recipes&customize_changeset_uuid=600b1be5-f893-48d0-9784-1187f5a2661c"> <h1>RECIPES</h1></a>
                         </div>
                         
                     </div>
                     <div class="row filters m-0" >
                         <div class="col" style="width:100vw; height:30vh;">
                             <div class="filters-container">
-                                <div class="sort-title"><p>Sort by difficulty</p></div>
-                                <div class="button-filters">
-                                    <button>EASY</button>
-                                    <button>MEDIUM</button>
-                                    <button>HARD</button>
-                                </div>
+                                <div class="sort-title"><p>Pick by difficulty</p></div>
+                                <?php
+                                $args = array(
+                                    'theme_location' => 'diff'
+                                );
+                                ?>
+                                <?php wp_nav_menu( $args); ?>
                             </div>
                             <div class="filters-container">
-                                <div class="sort-title"><p>Sort by daytime</p></div>
-                                <div class="button-filters">
-                                    <button>BREAKFAST</button>
-                                    <button>LUNCH</button>
-                                    <button>DINNER</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row recipe m-0" >
-                        <div class="col" style="height:auto;">
-                            <div class="food-card">
-                                <img src="<?php the_field('home_background') ?>" alt="">
-                                <div class="card-text">
-                                    <h1>RECIPE NAME</h1>
-                                    <p>Mini description about the meal, recipe and the organon of the dish. I’m just trying to find words to fill place.</p>
-                                    <button>Click for more</button>
-                                </div>
-                            </div>
-                            <div class="food-card">
-                                <img src="<?php the_field('home_background') ?>" alt="">
-                                <div class="card-text">
-                                    <h1>RECIPE NAME</h1>
-                                    <p>Mini description about the meal, recipe and the organon of the dish. I’m just trying to find words to fill place.</p>
-                                    <button>Click for more</button>
-                                </div>
-                            </div>
-                            <div class="food-card">
-                                <img src="<?php the_field('home_background') ?>" alt="">
-                                <div class="card-text">
-                                    <h1>RECIPE NAME</h1>
-                                    <p>Mini description about the meal, recipe and the organon of the dish. I’m just trying to find words to fill place.</p>
-                                    <button>Click for more</button>
-                                </div>
-                            </div>
-                            <div class="food-card">
-                                <img src="<?php the_field('home_background') ?>" alt="">
-                                <div class="card-text">
-                                    <h1>RECIPE NAME</h1>
-                                    <p>Mini description about the meal, recipe and the organon of the dish. I’m just trying to find words to fill place.</p>
-                                    <button>Click for more</button>
-                                </div>
+                                <div class="sort-title"><p>Pick by daytime</p></div>
+                                <?php
+                                $args = array(
+                                    'theme_location' => 'daytime'
+                                );
+                                ?>
+                                <?php wp_nav_menu( $args); ?>
                             </div>
                         </div>
                     </div>

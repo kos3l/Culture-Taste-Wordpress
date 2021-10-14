@@ -8,6 +8,8 @@ add_action('wp_enqueue_scripts', "cultureTaste_enqueue_styles" );
 
 register_nav_menus(array(
     'primary' => __( 'Primary Menu'),
+    'diff' => __( 'Difficulty menu'),
+    'daytime' => __( 'Daytime menu'),
 
 ));
 
