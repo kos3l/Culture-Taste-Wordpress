@@ -8,7 +8,7 @@
                                 <div class="pop-up-box">
                                     <h1>COOK WORLD</h1>
                                     <div class="text-box">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae dolor ut lacus interdum sollicitudin. Suspendisse porttitor risus eu velit pellentesque, ac porta leo maximus. Aenean a faucibus massa. Aenean venenatis diam vitae arcu efficitur, ac rutrum purus cursus. Vestibulum eu suscipit leo, in hendrerit lacus. Aenean nec ipsum eu tellus venenatis convallis. Donec gravida consequat urna, vel semper felis volutpat non. Mauris et mollis libero. </p>
+                                        <p> <?php the_content() ?> </p>
                                     </div>
                                 </div>
                             </div>
