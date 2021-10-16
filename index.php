@@ -6,7 +6,7 @@
                             <img src="<?php the_field('home_background') ?>" class="bg-img p-0" alt="">
                             <div class="col center p-0">
                                 <div class="pop-up-box">
-                                    <h1>COOK WORLD</h1>
+                                    <h1><?php the_title() ?></h1>
                                     <div class="text-box">
                                         <p> <?php the_content() ?> </p>
                                     </div>
@@ -16,20 +16,21 @@
                     <div class="row filters-title m-0" id="recipes">
                         <div class="col title-col justify-content-center align-items-center">
 
-                        <a href="http://localhost:8888/wp-new/?post_type=recipes&customize_changeset_uuid=600b1be5-f893-48d0-9784-1187f5a2661c"> <h1>ALL RECIPES</h1></a>
+                        <a href="http://localhost:8888/wp-new/?post_type=recipes&customize_changeset_uuid=600b1be5-f893-48d0-9784-1187f5a2661c"> 
+                        <h1><?php the_field('category_title') ?></h1></a>
                         </div>
                         
                     </div>
                     <div class="row m-0">
                         <div class="col title-col-middle justify-content-center align-items-center">
-                            <p>or choose a delicious dish with our filters</p>
+                            <p><?php the_field('under_category_title') ?></p>
                         </div>
                         
                     </div>
                     <div class="row filters m-0" >
                         <div class="col" style="width:100vw; height:30vh;">
                             <div class="filters-container">
-                                <div class="sort-title"><p>Pick by difficulty</p></div>
+                                <div class="sort-title"><p> Pick by daytime</p></div>
                                 <?php
                                 $args = array(
                                     'theme_location' => 'diff'
@@ -49,37 +50,38 @@
                         </div>
                     </div>
                     <div class="row book-container" id="books">
-                        <div class="col-3 arrows">
-                            <button> <i class="fas fa-arrow-left"></i> </button>
+                    <h1><?php the_field('purchase') ?></h1>
+                        <div class="col-6 book">
+                            <img src=" <?php the_field('book_1_image') ?>" alt="">
+                            <p><?php the_field('book_1_description') ?></p>
+                            <a href="<?php the_field('link_1') ?>">
+                            <button id="last"><a href="<?php the_field('link_1') ?>">Order online</a></button>
                         </div>
                         <div class="col-6 book">
-                            <h1>PURCHASE OUR BOOK</h1>
-                            <img src=" <?php the_field('home_background') ?>" alt="">
-                            <p>Mini description about the meal, recipe and the origin of the dish. I’m just trying to find words to fill place.I’m just trying to find words to fill place</p>
-                            <button>Click for more</button>
+                            <img src=" <?php the_field('book_2_image') ?>" alt="">
+                            <p><?php the_field('book_2_description') ?></p>
+                            <button id="last"><a href="<?php the_field('link_2') ?>">Order online</a></button>
                         </div>
-                        <div class="col-3 arrows">
-                            <button> <i class="fas fa-arrow-right"></i></button>
-                        </div>
+
                     </div>
                     <div class="row chefs">
-                        <h1>TEAM / CHEFS</h1>
+                        <h1><?php the_field('team_title') ?></h1>
                         <div class="circle-container">
                             <div class=" circle">
-                                <img src="<?php the_field('placeholder') ?>" alt="">
-                                <p>YOUR NAME</p>
+                                <img src="<?php the_field('name_1_picture') ?>" alt="">
+                                <p><?php the_field('name_1') ?></p>
                             </div>
                             <div class="circle">
-                                <img src="<?php the_field('placeholder') ?>" alt="">
-                                <p>YOUR NAME</p>
+                                <img src="<?php the_field('name_2_picture') ?>" alt="">
+                                <p><?php the_field('name_2') ?></p>
                             </div>
                             <div class="circle">
-                                <img src="<?php the_field('placeholder') ?>" alt="">
-                                <p>YOUR NAME</p>
+                                <img src="<?php the_field('name_3_picture') ?>" alt="">
+                                <p><?php the_field('name_3') ?></p>
                             </div>
                             <div class="circle">
-                                <img src="<?php the_field('placeholder') ?>" alt="">
-                                <p>YOUR NAME</p>
+                                <img src="<?php the_field('name_4_picture') ?>" alt="">
+                                <p><?php the_field('name_4') ?></p>
                             </div>
                         </div>
                     </div>

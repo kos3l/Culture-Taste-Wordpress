@@ -10,7 +10,6 @@
 <body>
     <div class="container-fluid main-body p-0">
         <div class="row top-nav ">
-
             <div class="col p-0">
                 <?php
                 $args = array(
@@ -20,6 +19,7 @@
                 <?php wp_nav_menu( $args); ?>
                 
             </div>
+
         </div>
 
 
