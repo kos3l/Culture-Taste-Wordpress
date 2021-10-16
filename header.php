@@ -19,6 +19,9 @@
                 <?php wp_nav_menu( $args); ?>
                 
             </div>
+            <div class="col search">
+                <?php get_search_form(); ?>
+            </div>
 
         </div>
 
