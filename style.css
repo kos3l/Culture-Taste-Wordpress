@@ -471,7 +471,7 @@ body{
 .section{
     margin-top: 4rem;
     margin-bottom: 4rem;
-    padding: 2rem;
+    padding: 0;
     width: 90vw;
     height: auto;
     border-radius: 30px;
@@ -482,10 +482,49 @@ body{
      flex-direction: row;
 
 }
+.left {
+    background-color: #D5D5D5;
+    border-radius: 30px;
+    border: 2px solid #EDEDED
 
+}
+.right {
+    padding: 3rem;
+}
 .left img{
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    border-radius: 16px 16px 0px 0px;
+
+}
+.left ul li {
+    list-style-type: none;
+}
+.left ul {
+    padding: 0;
+}
+.left h2{
+    margin-top: 3rem;
+    color: #B65053;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-shadow: 3px 3px 8px #9e9d9d;
+}
+
+.right h2, .right h1  {
+    color: #B65053;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-shadow: 3px 3px 8px #c0bcbc;
+
+}
+.ingredients{
+    width: 100%;
+    height: auto;
+    padding: 0 3rem 3rem 3rem
 }
 
 /* archive page */

@@ -4,6 +4,7 @@
     <div class="section">
         <div class="col-4 left d-flex flex-column">
             <img src="<?php the_field('dish_image') ?>" alt="">
+            <div class="ingredients">
             <h2> <?php the_field('ingredients_title') ?></h2>
             <ul>
                 <li>
@@ -55,6 +56,8 @@
                     <?php the_field('ingredient_16') ?>
                 </li>
             </ul>
+            </div>
+            
         </div>
         <div class="col-8 right">
             <h1><?php the_title() ?></h1>
