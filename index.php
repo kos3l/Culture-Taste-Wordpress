@@ -51,19 +51,38 @@
                     </div>
                     <div class="row book-container" id="books">
                     <h1><?php the_field('purchase') ?></h1>
-                        <div class="col-6 book">
-                            <img src=" <?php the_field('book_1_image') ?>" alt="">
-                            <p><?php the_field('book_1_description') ?></p>
-                            <a href="<?php the_field('link_1') ?>">
-                            <button id="last"><a href="<?php the_field('link_1') ?>">Order online</a></button>
-                        </div>
-                        <div class="col-6 book">
-                            <img src=" <?php the_field('book_2_image') ?>" alt="">
-                            <p><?php the_field('book_2_description') ?></p>
-                            <button id="last"><a href="<?php the_field('link_2') ?>">Order online</a></button>
-                        </div>
-
                     </div>
+                    <div class="row book-custom">
+                    <?php
+                        $args = array(
+                        'post_type'   => 'book',
+                        'post_status' => 'publish',
+                        
+                        );
+                        
+                        $book = new WP_Query( $args );
+                        if( $book->have_posts() ) :
+                        ?>
+                        <ul>
+                            <?php
+                            while( $book->have_posts() ) :
+                                $book->the_post();
+                                ?>
+                                
+                                <li><?php printf( '%1$s - %2$s', get_the_title(), get_the_content() );  ?></li>
+                                
+                                <?php
+                            endwhile;
+                            wp_reset_postdata();
+                            ?>
+                        </ul>
+                        <?php
+                        else :
+                        esc_html_e( 'No testimonials in the diving taxonomy!', 'text-domain' );
+                        endif;
+                        ?>
+</div>
+                    
                     <div class="row chefs">
                         <h1><?php the_field('team_title') ?></h1>
                         <div class="circle-container">
