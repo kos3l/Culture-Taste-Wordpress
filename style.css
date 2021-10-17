@@ -646,11 +646,61 @@ article h2:hover a{
 @media screen and (max-width: 800px) {
     .left img{
         width: 50%;
-
     
     }
     .section{
         flex-direction: column;
+    }
+    .sub-recipe{
+        margin: 0;
+    }
+
+    .top-nav{
+        height: 24vh;
+
+    }
+    .menu-scroll-menu-container{
+        width: 100vw;
+        height: 100%;
+        padding: 1rem 1rem 0 1rem;
+    }
+    .menu {
+        justify-content: space-around;
+    }
+
+    .menu a {
+
+        font-size: 0.8rem;
+    }
+    #menu-item-145 a img{
+        width: 60px;
+        height: 60px;
+        margin-left: 0rem;
+    }
+    #searchform{
+        width: 100%;
+        margin: 1rem 0 1rem 0;
+    }
+    #searchform div{
+        display: flex;
+        justify-content: center;
+    }
+    .search{
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+    #searchsubmit{
+        width: 28%;
+    }
+    #s{
+        width: 58%;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        margin-right: 1rem;
+        margin-left:1rem
+    }
+    .search-res{
+        margin-bottom: 2rem;
     }
 }
 /*mobile*/
@@ -908,6 +958,5 @@ article h2:hover a{
         height: auto;
         padding: 0 1.5rem 1.5rem 1.5rem
     }
-    
 
 }
