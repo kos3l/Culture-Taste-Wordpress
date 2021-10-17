@@ -2,7 +2,7 @@
 <?php while(have_posts()): the_post() ?>
 <div class="row sub-recipe">
     <div class="section">
-        <div class="col-4 left d-flex flex-column">
+        <div class="col-lg-4 col-sm-12 col-md-12 left d-flex flex-lg-column flex-md-row flex-sm-row">
             <img src="<?php the_field('dish_image') ?>" alt="">
             <div class="ingredients">
             <h2> <?php the_field('ingredients_title') ?></h2>
@@ -59,7 +59,7 @@
             </div>
             
         </div>
-        <div class="col-8 right">
+        <div class="col-lg-8 col-md-12 col-sm-12  right">
             <h1><?php the_title() ?></h1>
             <p><?php the_content() ?></p>
         </div>
