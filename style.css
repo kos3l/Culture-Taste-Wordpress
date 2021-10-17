@@ -645,3 +645,204 @@ article h2:hover a{
     color: #B65053;
     transition: ease-in-out 0.5s;
 }
+
+/*mobile*/
+@media only screen and (max-width: 992px) {
+    .top-nav{
+        height: 24vh;
+
+    }
+    .menu-scroll-menu-container{
+        width: 100vw;
+        height: 100%;
+        padding: 1rem 1rem 0 1rem;
+    }
+    .menu {
+        justify-content: space-around;
+    }
+
+    .menu a {
+
+        font-size: 0.8rem;
+    }
+    #menu-item-145 a img{
+        width: 60px;
+        height: 60px;
+        margin-left: 0rem;
+    }
+    #searchform{
+        width: 100%;
+        margin: 1rem 0 1rem 0;
+    }
+    #searchform div{
+        display: flex;
+        justify-content: center;
+    }
+    .search{
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+    #searchsubmit{
+        width: 28%;
+    }
+    #s{
+        width: 58%;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        margin-right: 1rem;
+        margin-left:1rem
+    }
+    .search-res{
+        margin-bottom: 2rem;
+    }
+    .center{
+        left: 5vw;
+        top: 10vh;
+        width: 90%;
+    }
+
+    .filters{
+        width:100%;
+        height: 40vh;
+    }
+    .filters-container{
+        width: 100vw;
+        height: 15vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .sort-title{
+        width: 75vw;
+        height: 2.5rem;
+        text-align: left;
+    }
+
+    .title-col-middle{
+        font-size: 1.2rem;
+        padding: 0 3rem 3rem 3rem;
+        text-align: center;
+    }
+    .title-col-middle p{
+        padding: 0 1rem 0 1rem;
+    }
+    
+    .filters-title h1{
+    
+        margin: 0;
+        padding:0;
+        font-weight: 600;
+        letter-spacing: 0.1rem;
+        text-shadow: 3px 3px 8px #D5D5D5;
+        text-decoration: none;
+    
+    }
+    .filters-title a {
+        color: #B65053;
+        text-decoration: none;
+    }
+    .filters-title h1:hover {
+    
+        text-shadow: 0px 5px 8px rgb(250, 191, 191);
+        font-size: 2.6rem;
+        transition: ease-in-out 0.5s;
+    
+    }
+    .filters .col{
+        padding:0;
+    }
+
+    .sort-title{
+        width: 85vw;
+    }
+    .filters-container .menu-difficulty-menu-container{
+        width: 85vw;
+    }
+    .filters-container .menu-daytime-menu-container {
+        width:85vw;
+    }
+    .filters-container .menu{
+        border-radius: inherit;
+        width: 100%;
+        height: 2.5rem;
+    }
+    .filters-container .menu a{
+        font-weight: 600;
+    
+    }
+    .filters-container .menu li{
+        height: 2.5rem;
+        width: 34%;
+        border-radius: 16px;
+        border: none;
+        margin: 0;
+        font-weight: 600;
+        background-color: white;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #menu-item-104:hover{
+        background-color: #B65053;
+    }
+    #menu-item-104:hover a{
+        color: white;
+    }
+    #menu-item-105:hover{
+        background-color: #B65053;
+    }
+    #menu-item-105:hover a{
+        color: white;
+    }
+    #menu-item-106:hover{
+        background-color: #B65053;
+    }
+    #menu-item-106:hover a{
+        color: white;
+    }
+    
+    
+    #menu-item-109:hover{
+        background-color: #B65053;
+    }
+    #menu-item-109:hover a{
+        color: white;
+    }
+    #menu-item-110:hover{
+        background-color: #B65053;
+    }
+    #menu-item-110:hover a{
+        color: white;
+    }
+    #menu-item-111:hover{
+        background-color: #B65053;
+    }
+    #menu-item-111:hover a{
+        color: white;
+    }
+    
+    .button-filters{
+        width: 75vw;
+        height: 2.5rem;
+        border-radius: 16px;
+        box-shadow: 0px 0px 16px #D5D5D5;
+        margin: 0;
+    }
+    .button-filters button{
+        width: 33%;
+        height: 100%;
+        border-radius: inherit;
+        border: none;
+        margin: 0;
+        font-weight: 600;
+        background-color: white;
+    }
+    .button-filters button:hover{
+        background-color: #B65053;
+        color: white;
+    }
+
+}

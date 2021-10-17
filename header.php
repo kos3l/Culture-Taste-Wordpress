@@ -10,7 +10,7 @@
 <body>
     <div class="container-fluid main-body p-0">
         <div class="row top-nav ">
-            <div class="col p-0">
+            <div class="col-lg-6 col-sm-12   p-0">
                 <?php
                 $args = array(
                     'theme_location' => 'primary'
@@ -19,7 +19,7 @@
                 <?php wp_nav_menu( $args); ?>
                 
             </div>
-            <div class="col search">
+            <div class="col-lg-6 col-sm-12   search">
                 <?php get_search_form(); ?>
             </div>
 
